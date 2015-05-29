@@ -1,11 +1,11 @@
-module.exports = function () {
+// module.exports = function () {
 
-  this.After(function(callback) {
+//   this.After(function(callback) {
 
-    // console.log('Shutting down browser');
+//     // console.log('Shutting down browser');
 
-    this.end(callback);
+//     this.end(callback);
 
-  });
+//   });
 
-};
+// };
