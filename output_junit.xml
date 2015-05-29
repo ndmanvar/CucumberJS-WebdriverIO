@@ -1,0 +1,22 @@
+<testsuites>
+    <testsuite name="Do-a-Google-Search;google-search" tests="4" failures="0" skipped="0">
+        <testcase name="Given I visit http://google.com" classname="Do-a-Google-Search;google-search" time="3.857347629">
+        </testcase>
+        <testcase name="When I enter &apos;cheese&apos; into &apos;lst-ib&apos;" classname="Do-a-Google-Search;google-search" time="2.642452556">
+        </testcase>
+        <testcase name="Then I should see search results" classname="Do-a-Google-Search;google-search" time="1.610795606">
+        </testcase>
+        <testcase name="After undefined" classname="Do-a-Google-Search;google-search" time="0.289336937">
+        </testcase>
+    </testsuite>
+    <testsuite name="Do-a-Google-Search;google-search" tests="4" failures="0" skipped="0">
+        <testcase name="Given I visit http://google.com" classname="Do-a-Google-Search;google-search" time="4.437474917">
+        </testcase>
+        <testcase name="When I enter &apos;hamburgers&apos; into &apos;lst-ib&apos;" classname="Do-a-Google-Search;google-search" time="4.435096593">
+        </testcase>
+        <testcase name="Then I should see search results" classname="Do-a-Google-Search;google-search" time="1.934926038">
+        </testcase>
+        <testcase name="After undefined" classname="Do-a-Google-Search;google-search" time="0.344722194">
+        </testcase>
+    </testsuite>
+</testsuites>
