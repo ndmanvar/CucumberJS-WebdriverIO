@@ -25,7 +25,6 @@ module.exports = function () {
    */
   this.StepResult(function(event, callback) {
     var stepResult = event.getPayloadItem('stepResult');
-    console.log("here");
     passed = stepResult.isSuccessful() && passed;
     callback();
   });
@@ -37,8 +36,7 @@ module.exports = function () {
    * @param {Function} event
    * @param {Function} callback
    */
-  this.registerHandler('AfterFeatures', function(event, callback) {
-    console.log("here");
+  this.registerHandler('AfterScenario', function(event, callback) {
     if (true) {
     // if (process.env['cuked.host'].toString().match(/saucelabs/)) {
       global.client

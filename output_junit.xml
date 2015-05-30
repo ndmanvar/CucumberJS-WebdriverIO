@@ -1,22 +1,22 @@
 <testsuites>
-    <testsuite name="Do-a-Google-Search;google-search" tests="4" failures="0" skipped="0">
-        <testcase name="Given I visit http://google.com" classname="Do-a-Google-Search;google-search" time="3.857347629">
+    <testsuite name="Google-for-Cucumber;find-cukes.info" tests="4" failures="0" skipped="0">
+        <testcase name="Given I am on Google" classname="Google-for-Cucumber;find-cukes.info" time="4.859955475">
         </testcase>
-        <testcase name="When I enter &apos;cheese&apos; into &apos;lst-ib&apos;" classname="Do-a-Google-Search;google-search" time="2.642452556">
+        <testcase name="When I search for &quot;Cucumber BDD&quot;" classname="Google-for-Cucumber;find-cukes.info" time="0.708290049">
         </testcase>
-        <testcase name="Then I should see search results" classname="Do-a-Google-Search;google-search" time="1.610795606">
+        <testcase name="Then I see a link to &quot;http://cukes.info/&quot;" classname="Google-for-Cucumber;find-cukes.info" time="3.057360549">
         </testcase>
-        <testcase name="After undefined" classname="Do-a-Google-Search;google-search" time="0.289336937">
+        <testcase name="After undefined" classname="Google-for-Cucumber;find-cukes.info" time="0.167862915">
         </testcase>
     </testsuite>
-    <testsuite name="Do-a-Google-Search;google-search" tests="4" failures="0" skipped="0">
-        <testcase name="Given I visit http://google.com" classname="Do-a-Google-Search;google-search" time="4.437474917">
+    <testsuite name="Google-for-Cucumber;find-cukes.infoabc" tests="4" failures="0" skipped="0">
+        <testcase name="Given I am on Google" classname="Google-for-Cucumber;find-cukes.infoabc" time="4.68494034">
         </testcase>
-        <testcase name="When I enter &apos;hamburgers&apos; into &apos;lst-ib&apos;" classname="Do-a-Google-Search;google-search" time="4.435096593">
+        <testcase name="When I search for &quot;Cucumber BDD&quot;" classname="Google-for-Cucumber;find-cukes.infoabc" time="0.601671258">
         </testcase>
-        <testcase name="Then I should see search results" classname="Do-a-Google-Search;google-search" time="1.934926038">
+        <testcase name="Then I see a link to &quot;http://cukes.info/&quot;" classname="Google-for-Cucumber;find-cukes.infoabc" time="3.230750339">
         </testcase>
-        <testcase name="After undefined" classname="Do-a-Google-Search;google-search" time="0.344722194">
+        <testcase name="After undefined" classname="Google-for-Cucumber;find-cukes.infoabc" time="0.169203853">
         </testcase>
     </testsuite>
 </testsuites>

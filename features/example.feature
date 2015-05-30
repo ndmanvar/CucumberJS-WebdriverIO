@@ -9,3 +9,8 @@ Feature: Google for Cucumber
   Scenario: find cukes.info
     When I search for "Cucumber BDD"
     Then I see a link to "http://cukes.info/"
+
+  Scenario: find cukes.infoABC
+    When I search for "Cucumber BDD"
+    Then I see a link to "http://cukes.info/"
+
