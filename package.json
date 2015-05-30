@@ -1,24 +1,23 @@
 {
 
-    "name": "YourProject",
-    "version": "0.0.1",
-    "description": "Description for this project",
-    "homepage": "http://project.home.page",
-    "keywords": [ "some", "key", "words" ],
-    "maintainers": [
-        {
-            "name": "You",
-            "email": "your@email.address",
-            "web": "http://your.website.address"
-        }
-    ],
-    "licenses": [ { "type": "MIT", "url": "http://mit-license.org/" } ],
-    "repositories": [ { "type": "git", "url": "https://github.com/?/?" } ],
+    "repository": {
+        "type" : "git",
+        "url" : "http://github.com/ndmanvar/CucumberJS-WebdriverIO"
+      },
 
     "devDependencies" : {
         "cucumber": "latest",
         "webdriverio": "latest",
         "cucumber-junit": "latest",
-        "parallel-cucumber": "latest"
+        "parallel-cucumber": "latest",
+
+        "async": "~0.9.0",
+        "chai": "~1.10.0",
+        "chai-as-promised": "~4.1.1",
+        "minimist": "~1.1.0",
+        "phantomjs": "~1.9.13",
+        "saucelabs": "~0.1.1",
+        "selenium-launcher": "~1.1.11",
+        "wd": "~0.3.11"
     }
 }
