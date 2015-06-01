@@ -15,7 +15,7 @@ module.exports = function () {
   this.Then('I see a link to "$url"', function(url, callback) {
     this.client
       .waitForExist('a[href*="' + url + '"]', 3000)
-      .should.eventually.exist
+      .should.eventually.be.true
       .call(callback);
   });
 

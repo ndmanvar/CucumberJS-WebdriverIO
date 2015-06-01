@@ -6,11 +6,11 @@ Feature: Google for Cucumber
   Background:
     Given I am on Google
 
-  Scenario: find cukes.info
+  Scenario: oneq
     When I search for "Cucumber BDD"
-    Then I see a link to "http://cukes.info/"
+    Then I see a link to "https://cucumber.io/"
 
-  Scenario: find cukes.infoABC
+  Scenario: twoq
     When I search for "Cucumber BDD"
-    Then I see a link to "http://cukes.info/"
+    Then I see a link to "http://cucumber.io/123"
 

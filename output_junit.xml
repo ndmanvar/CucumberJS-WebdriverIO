@@ -1,22 +1,28 @@
 <testsuites>
-    <testsuite name="Google-for-Cucumber;find-cukes.info" tests="4" failures="0" skipped="0">
-        <testcase name="Given I am on Google" classname="Google-for-Cucumber;find-cukes.info" time="4.859955475">
+    <testsuite name="Google-for-Cucumber;oneq" tests="5" failures="1" skipped="0">
+        <testcase name="Given I am on Google" classname="Google-for-Cucumber;oneq" time="4.541169927">
         </testcase>
-        <testcase name="When I search for &quot;Cucumber BDD&quot;" classname="Google-for-Cucumber;find-cukes.info" time="0.708290049">
+        <testcase name="When I search for &quot;Cucumber BDD&quot;" classname="Google-for-Cucumber;oneq" time="0.822919307">
         </testcase>
-        <testcase name="Then I see a link to &quot;http://cukes.info/&quot;" classname="Google-for-Cucumber;find-cukes.info" time="3.057360549">
+        <testcase name="Then I see a link to &quot;http://cukes.info/&quot;" classname="Google-for-Cucumber;oneq" time="3.057314713">
+            <error message="AssertionError: expected false to be true">AssertionError: expected false to be true
+
+</error>
         </testcase>
-        <testcase name="After undefined" classname="Google-for-Cucumber;find-cukes.info" time="0.167862915">
+        <testcase name="Then I see a link to &quot;http://cukes.info/&quot;" classname="Google-for-Cucumber;oneq" time="3.058382266">
+        </testcase>
+        <testcase name="After undefined" classname="Google-for-Cucumber;oneq" time="0.430467011">
         </testcase>
     </testsuite>
-    <testsuite name="Google-for-Cucumber;find-cukes.infoabc" tests="4" failures="0" skipped="0">
-        <testcase name="Given I am on Google" classname="Google-for-Cucumber;find-cukes.infoabc" time="4.68494034">
+    <testsuite name="Google-for-Cucumber;twoq" tests="3" failures="1" skipped="0">
+        <testcase name="Given I am on Google" classname="Google-for-Cucumber;twoq" time="4.592184851">
         </testcase>
-        <testcase name="When I search for &quot;Cucumber BDD&quot;" classname="Google-for-Cucumber;find-cukes.infoabc" time="0.601671258">
+        <testcase name="When I search for &quot;Cucumber BDD&quot;" classname="Google-for-Cucumber;twoq" time="0.921463937">
         </testcase>
-        <testcase name="Then I see a link to &quot;http://cukes.info/&quot;" classname="Google-for-Cucumber;find-cukes.infoabc" time="3.230750339">
-        </testcase>
-        <testcase name="After undefined" classname="Google-for-Cucumber;find-cukes.infoabc" time="0.169203853">
+        <testcase name="After undefined" classname="Google-for-Cucumber;twoq" time="8.98058845">
+            <error message="AssertionError: expected false to be true">AssertionError: expected false to be true
+
+</error>
         </testcase>
     </testsuite>
 </testsuites>

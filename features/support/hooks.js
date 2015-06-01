@@ -13,6 +13,11 @@ module.exports = function () {
    */
   this.After(function(event, callback) {
     this.client
+      .sauceJobStatus({
+          passed: passed,
+          name: event.getName(),
+          public: true
+        })
       .end()
       .then(callback);
   });
@@ -27,29 +32,5 @@ module.exports = function () {
     var stepResult = event.getPayloadItem('stepResult');
     passed = stepResult.isSuccessful() && passed;
     callback();
-  });
-
-  /**
-   * After features have run we close the browser and optionally notify
-   * SauceLabs
-   *
-   * @param {Function} event
-   * @param {Function} callback
-   */
-  this.registerHandler('AfterScenario', function(event, callback) {
-    if (true) {
-    // if (process.env['cuked.host'].toString().match(/saucelabs/)) {
-      global.client
-        .sauceJobStatus({
-          passed: passed,
-          public: true
-        })
-        .end()
-        .then(callback);
-    } else {
-      global.client
-        .end()
-        .then(callback);
-    }
   });
 };
