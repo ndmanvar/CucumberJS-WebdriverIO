@@ -1,7 +1,7 @@
-Feature: Google for Cucumber
-  In order to get more info about Cucumber
-  As a BDDer
-  I want to find Cucumber resources on Google
+Feature: Draft City homepage
+  In order to learn more about this years draft
+  As a User
+  I want to view the draft city homepage
 
   Scenario: Verify Draft City Homepage UI
     Given I am on the draft city chicago homepage
