@@ -28,6 +28,16 @@ module.exports = function () {
       .call(callback);
   });
 
+  this.Then('I wait for the map to collapse', function (callback) {
+    var selector = '#',
+      that = this;
+
+    this.client
+      .waitForVisible("#Map_Items g", 3000, true).should.eventually.be.true
+      .call(callback)
+  });
+
+
   this.Then('I should see the Auditorium Theatre header and text', function(callback) {
     var selector = '.header-left';
 
@@ -68,7 +78,6 @@ module.exports = function () {
     var selector = "div[style*='icn-map.svg']";
 
     this.client
-      .waitForVisible(selector, 3000).should.eventually.be.true
       .click(selector)
       .call(callback);
   });

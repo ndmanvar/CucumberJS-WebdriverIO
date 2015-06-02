@@ -18,6 +18,7 @@ module.exports = function() {
     desiredCapabilities: {
       browserName: process.env.browserName,
       platform: process.env.platform,
+      version: process.env.version,
       name: process.env.name
     },
     user: process.env['cuked.user'] || process.env.SAUCE_USERNAME,
