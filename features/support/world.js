@@ -50,11 +50,6 @@ module.exports = function() {
           sauceAccount.updateJob(sessionID, status, done);
         });
 
-        // load cuked webdriver configuration
-        // var configPath = path.resolve(process.cwd(), process.env['cuked.path'], 'cuked.js');
-        // if (fs.existsSync(configPath)) {
-        //   global.client = require(configPath)(this);
-        // }
       });
     this.client = global.client;
 
