@@ -21,8 +21,8 @@ module.exports = function() {
       version: process.env.version,
       name: process.env.name
     },
-    user: process.env['cuked.user'] || process.env.SAUCE_USERNAME,
-    key: process.env['cuked.key'] || process.env.SAUCE_ACCESS_KEY,
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
     host: 'ondemand.saucelabs.com',
     port: 80,
     logLevel: "silent"
@@ -44,8 +44,8 @@ module.exports = function() {
         // helper method for sending test results to SauceLabs
         global.client.addCommand('sauceJobStatus', function(status, done) {
           var sauceAccount = new SauceLabs({
-            username: process.env['cuked.user'] || process.env.SAUCE_USERNAME,
-            password: process.env['cuked.key'] || process.env.SAUCE_ACCESS_KEY
+            username: process.env.SAUCE_USERNAME,
+            password: process.env.SAUCE_ACCESS_KEY
           });
 
           sauceAccount.updateJob(sessionID, status, done);
