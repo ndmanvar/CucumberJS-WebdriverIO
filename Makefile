@@ -2,7 +2,7 @@ RUN_CUCUMBER_TESTS=./node_modules/.bin/parallel-cucumber-js features -f json -w 
 
 # Run all tests in parallel
 run_tests:
-	make -j test_win7_chrome_43 test_win7_ie_10 test_win7_firefox_37
+	make -j test_win7_chrome_43 test_winXP_chrome_41 test_win7_ie_10 test_win8_1_ie_11 test_win7_firefox_37
 
 test_win7_chrome_43:
 	browserName='chrome' version=43 platform='Windows 7' name=Win7ChromeTests \
@@ -19,7 +19,7 @@ test_win7_ie_10:
 		$(RUN_CUCUMBER_TESTS) > Win7IE10Tests.txt
 	cat Win7IE10Tests.txt | ./node_modules/.bin/cucumber-junit > Win7IE10Tests.xml
 
-test_win8.1_ie_11:
+test_win8_1_ie_11:
 	browserName='internet explorer' version=11 platform='Windows 8.1' name=Win81IE11Tests \
 		$(RUN_CUCUMBER_TESTS) > Win81IE11Tests.txt
 	cat Win81IE11Tests.txt | ./node_modules/.bin/cucumber-junit > Win7IE11Tests.xml
