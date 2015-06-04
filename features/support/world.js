@@ -1,7 +1,3 @@
-/*!
- * Cuked World
- */
-
 var wd = require('webdriverio'),
     fs = require('fs'),
     chai = require('chai'),
@@ -14,6 +10,7 @@ chai.use(chaiAsPromised);
 chai.should();
 
 module.exports = function() {
+  // setup remote browser that wil be launched in saucelabs
   global.client = wd.remote({
     desiredCapabilities: {
       browserName: process.env.browserName,
